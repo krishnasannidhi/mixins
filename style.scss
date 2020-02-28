@@ -1,0 +1,15 @@
+@mixin mixin1{
+  color: lightseagreen;
+  font-size: 50px;
+  font-weight: bold;
+}
+
+@mixin  mixin2 {
+  @include mixin1;
+  color: red;
+  border: 1px solid black;
+}
+
+.class1{
+  @include mixin2;
+}
